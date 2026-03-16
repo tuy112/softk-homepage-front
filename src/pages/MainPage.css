@@ -1,0 +1,13 @@
+.site-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.fp-auto-height {
+  height: auto !important;
+}
