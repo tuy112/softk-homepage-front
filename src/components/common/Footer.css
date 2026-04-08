@@ -1,55 +1,40 @@
 .footer {
   width: 100%;
+  height: 120px;
   background: linear-gradient(135deg, #07101f, #0a1630);
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 28px;
+
+  display: flex;
+  align-items: center;
 }
 
-.footer__inner {
+.footer-inner {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  gap: 40px;
-  padding-bottom: 20px;
+  align-items: center;
 }
 
-.footer__brand {
-  font-size: 30px;
-  font-weight: 800;
+.footer-brand {
+  font-size: 20px;
+  font-weight: 700;
   color: #ffffff;
-  margin-bottom: 14px;
 }
 
-.footer__text {
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-.footer__right {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.footer__link {
-  font-size: 15px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.footer__bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 18px 0;
+.footer-text {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.55);
 }
 
-@media (max-width: 768px) {
-  .footer__inner {
-    flex-direction: column;
-  }
+.footer-right {
+  display: flex;
+  gap: 16px;
+}
 
-  .footer__right {
-    gap: 16px;
-  }
+.footer-link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-bottom {
+  display: none; /* 제거 */
 }

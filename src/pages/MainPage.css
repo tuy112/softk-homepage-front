@@ -1,13 +1,7 @@
-.site-wrap {
-  width: 100%;
-  height: 100%;
+.main-page {
+  min-height: 100vh;
 }
 
-.section {
-  width: 100%;
-  /* height: 100vh; */
-}
-
-.fp-auto-height {
-  height: auto !important;
+.main-content {
+  padding-top: 80px;
 }
