@@ -40,17 +40,17 @@ function Header() {
               <div className={`header-dropdown ${activeMenu === 'about' ? 'is-open' : ''}`}>
                 <ul className="header-dropdown-list">
                   <li className="header-dropdown-item">
-                    <Link to="/about/intro" className="header-dropdown-link">
+                    <Link to="/about-company" className="header-dropdown-link">
                       회사개요
                     </Link>
                   </li>
                   <li className="header-dropdown-item">
-                    <Link to="/about/core" className="header-dropdown-link">
-                      핵심역량
+                    <Link to="/vision" className="header-dropdown-link">
+                      회사비전
                     </Link>
                   </li>
                   <li className="header-dropdown-item">
-                    <Link to="/about/partner" className="header-dropdown-link">
+                    <Link to="/partners" className="header-dropdown-link">
                       협력사
                     </Link>
                   </li>
@@ -58,55 +58,82 @@ function Header() {
               </div>
             </li>
 
-            {/* 솔루션 */}
-            <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('solution')} onMouseLeave={handleMouseLeave}>
-              <button type="button" className="header-menu-btn">솔루션</button>
+            {/* 소프트케이 소식 */}
+            <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('news')} onMouseLeave={handleMouseLeave}>
+              <button type="button" className="header-menu-btn">소프트케이소식</button>
 
-              <div className={`header-dropdown ${activeMenu === 'solution' ? 'is-open' : ''}`}>
+              <div className={`header-dropdown ${activeMenu === 'news' ? 'is-open' : ''}`}>
                 <ul className="header-dropdown-list">
                   <li className="header-dropdown-item">
-                    <Link to="/solution/rms" className="header-dropdown-link">
-                      RMS
+                    <Link to="/order-status" className="header-dropdown-link">
+                      수주현황
                     </Link>
                   </li>
                   <li className="header-dropdown-item">
-                    <Link to="/solution/ai" className="header-dropdown-link">
-                      AI 솔루션
+                    <Link to="/softk-news" className="header-dropdown-link">
+                      소프트케이뉴스
                     </Link>
                   </li>
                 </ul>
               </div>
             </li>
 
-            {/* 사업분야 */}
+            {/* 용역사업소개 */}
             <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('business')} onMouseLeave={handleMouseLeave}>
-              <button type="button" className="header-menu-btn">사업분야</button>
+              <button type="button" className="header-menu-btn">용역사업소개</button>
 
               <div className={`header-dropdown ${activeMenu === 'business' ? 'is-open' : ''}`}>
                 <ul className="header-dropdown-list">
                   <li className="header-dropdown-item">
-                    <Link to="/business/public" className="header-dropdown-link">
-                      공공기관
+                    <Link to="/business" className="header-dropdown-link">
+                      기록관리 컨설팅
                     </Link>
                   </li>
                   <li className="header-dropdown-item">
-                    <Link to="/business/private" className="header-dropdown-link">
-                      민간기업
+                    <Link to="/business" className="header-dropdown-link">
+                      기록물 이관 용역
+                    </Link>
+                  </li>
+                  <li className="header-dropdown-item">
+                    <Link to="/business" className="header-dropdown-link">
+                      공개재분류 용역
+                    </Link>
+                  </li>
+                  <li className="header-dropdown-item">
+                    <Link to="/business" className="header-dropdown-link">
+                      각종 기록물 등록 용역
+                    </Link>
+                  </li>
+                  <li className="header-dropdown-item">
+                    <Link to="/business" className="header-dropdown-link">
+                      구전자문서 변환 용역
                     </Link>
                   </li>
                 </ul>
               </div>
             </li>
 
-            {/* 빈 메뉴 */}
-            <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('empty')} onMouseLeave={handleMouseLeave}>
-              <button type="button" className="header-menu-btn">빈메뉴</button>
+            {/* 고객사 */}
+            <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('client')} onMouseLeave={handleMouseLeave}>
+              <button type="button" className="header-menu-btn">고객사</button>
 
-              <div className={`header-dropdown ${activeMenu === 'empty' ? 'is-open' : ''}`}>
+              <div className={`header-dropdown ${activeMenu === 'client' ? 'is-open' : ''}`}>
                 <ul className="header-dropdown-list">
                   <li className="header-dropdown-item">
-                    <Link to="/" className="header-dropdown-link">세부탭1</Link>
-                    <Link to="/" className="header-dropdown-link">세부탭2</Link>
+                    <Link to="/clients" className="header-dropdown-link">고객사</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* 오시는길 */}
+            <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('directions')} onMouseLeave={handleMouseLeave}>
+              <button type="button" className="header-menu-btn">오시는길</button>
+
+              <div className={`header-dropdown ${activeMenu === 'directions' ? 'is-open' : ''}`}>
+                <ul className="header-dropdown-list">
+                  <li className="header-dropdown-item">
+                    <Link to="/directions" className="header-dropdown-link">오시는길</Link>
                   </li>
                 </ul>
               </div>
