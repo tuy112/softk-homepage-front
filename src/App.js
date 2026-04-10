@@ -1,21 +1,39 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import MainPage from './pages/MainPage';
 
 // sub page
-import AboutPage from './pages/sub/AboutPage';
-import DetailPage from './pages/sub/DetailPage';
+import AboutCompany from './pages/sub/aboutCompany/AboutCompany';
+import Vision from './pages/sub/aboutCompany/Vision';
+import Partners from './pages/sub/aboutCompany/Partners';
+
+import OrderStatus from './pages/sub/news/OrderStatus';
+import SoftkNews from './pages/sub/news/SoftkNews';
+
+import Clients from './pages/sub/clients/Clients';
+import Dirctions from './pages/sub/directions/Directions';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
+        {/* main */}
         <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/about/:type" element={<DetailPage />} />
+
+        {/* sub */}
+        <Route path="/about-company" element={<AboutCompany />} />
+        <Route path="/vision" element={<Vision />} />
+        <Route path="/partners" element={<Partners />} />
+
+        <Route path="/order-status" element={<OrderStatus />} />
+        <Route path="/softk-news" element={<SoftkNews />} />
+        
+        <Route path="/clients" element={<Clients />} />
+        
+        <Route path="/directions" element={<Dirctions />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
