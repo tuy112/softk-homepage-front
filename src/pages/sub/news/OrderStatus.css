@@ -1,0 +1,54 @@
+.order-main {
+    padding-top: 80px;
+  }
+  
+  .order-hero {
+    height: 260px;
+    background: linear-gradient(135deg, #020617, #1e3a8a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .order-section {
+    padding: 80px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* 타이틀 */
+  .sub-section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  /* 테이블 */
+  .order-table {
+    border-top: 2px solid #111;
+  }
+  
+  .order-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-row.header {
+    font-weight: 700;
+    background: #f8fafc;
+  }
+  
+  /* placeholder */
+  .placeholder-box {
+    padding: 60px;
+    border: 2px dashed #ccc;
+    text-align: center;
+  }

@@ -1,0 +1,54 @@
+.vision-main {
+    padding-top: 80px;
+}
+
+.vision-hero {
+    height: 260px;
+    background: linear-gradient(135deg, #020617, #1e40af);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.vision-section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.vision-box {
+    font-size: 20px;
+    padding: 40px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.vision-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.vision-card {
+    flex: 1;
+    padding: 30px;
+    background: #444;
+    border-radius: 12px;
+}
+
+.vision-card h3, .vision-card p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.placeholder-box {
+    padding: 60px;
+    border: 2px dashed #ccc;
+    text-align: center;
+}
