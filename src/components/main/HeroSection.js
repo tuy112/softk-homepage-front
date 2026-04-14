@@ -1,7 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HeroSection.css';
 
 function HeroSection() {
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="hero-section" id="hero">
       <div className="section-shell hero-section__shell">
@@ -20,8 +29,13 @@ function HeroSection() {
             </p>
 
             <div className="btn-group">
-              <a href="#solutions" className="btn-primary">솔루션 보기</a>
-              <a href="#contact" className="btn-secondary">문의하기</a>
+              <Link to="/business/consulting" className="btn-primary">
+                솔루션 보기
+              </Link>
+
+              <a href="#contact" onClick={handleContactClick} className="btn-secondary">
+                문의하기
+              </a>
             </div>
           </div>
 
