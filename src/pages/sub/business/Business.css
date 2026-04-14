@@ -1,0 +1,231 @@
+.business-detail-page {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.business-detail-main {
+    padding-top: 80px;
+}
+
+/* HERO */
+.business-detail-hero {
+    height: 260px;
+    background: linear-gradient(135deg, #0b1f4d 0%, #1d4ed8 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* SECTION */
+.business-detail-section {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+/* CONTAINER */
+.business-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* LAYOUT */
+.business-detail-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* SIDEBAR */
+.business-detail-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 110px;
+}
+
+.business-detail-sidebar-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    padding: 32px 24px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.business-detail-sidebar-box h3 {
+    margin: 0 0 24px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.business-detail-sidebar-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.business-detail-sidebar-box li + li {
+    margin-top: 16px;
+}
+
+.business-detail-sidebar-box a {
+    display: block;
+    text-decoration: none;
+    color: #475569;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+.business-detail-sidebar-box a:hover,
+.business-detail-sidebar-box a.active {
+    color: #2563eb;
+}
+
+/* CONTENT */
+.business-detail-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.business-detail-content-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    padding: 44px 40px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.business-detail-content-box + .business-detail-content-box {
+    margin-top: 24px;
+}
+
+.business-detail-content-box h3 {
+    margin: 0 0 24px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #0f172a;
+}
+
+.business-detail-content-box p {
+    margin: 0 0 14px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #334155;
+    word-break: keep-all;
+}
+
+.business-detail-content-box p:last-child {
+    margin-bottom: 0;
+}
+
+.business-detail-content-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.business-detail-content-box li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #334155;
+    word-break: keep-all;
+}
+
+.business-detail-content-box li:last-child {
+    margin-bottom: 0;
+}
+
+.business-detail-content-box li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2563eb;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .business-detail-layout {
+        flex-direction: column;
+    }
+
+    .business-detail-sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .business-detail-hero h1 {
+        font-size: 44px;
+    }
+
+    .business-detail-hero p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .business-detail-main {
+        padding-top: 70px;
+    }
+
+    .business-detail-hero {
+        height: 220px;
+    }
+
+    .business-detail-hero h1 {
+        font-size: 34px;
+    }
+
+    .business-detail-hero p {
+        font-size: 16px;
+    }
+
+    .business-detail-container {
+        padding: 0 20px;
+    }
+
+    .business-detail-section {
+        padding: 60px 0;
+    }
+
+    .business-detail-sidebar-box {
+        padding: 24px 20px;
+        border-radius: 20px;
+    }
+
+    .business-detail-sidebar-box h3 {
+        font-size: 20px;
+    }
+
+    .business-detail-sidebar-box a {
+        font-size: 16px;
+    }
+
+    .business-detail-content-box {
+        padding: 32px 24px;
+        border-radius: 20px;
+    }
+
+    .business-detail-content-box h3 {
+        font-size: 26px;
+    }
+
+    .business-detail-content-box p,
+    .business-detail-content-box li {
+        font-size: 16px;
+    }
+}
