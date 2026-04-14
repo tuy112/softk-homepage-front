@@ -1,6 +1,6 @@
 import React from 'react';
 import './ClientsSection.css';
-import clientsData from '../../data/clientsData';
+import clientsData from '../../data/main/clientsData';
 
 function ClientsSection() {
   return (

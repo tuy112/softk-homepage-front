@@ -1,6 +1,6 @@
 import React from 'react';
 import './BusinessSection.css';
-import businessData from '../../data/businessData';
+import businessData from '../../data/main/businessData';
 
 function BusinessSection() {
   return (

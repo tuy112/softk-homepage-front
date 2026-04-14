@@ -1,6 +1,6 @@
 import React from 'react';
 import './SolutionsSection.css';
-import solutionsData from '../../data/solutionsData';
+import solutionsData from '../../data/main/solutionsData';
 
 function SolutionsSection() {
   return (
