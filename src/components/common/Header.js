@@ -68,21 +68,22 @@ function Header() {
                         협력사
                       </Link>
                     </li>
-                  </ul>
-                </div>
-              </li>
-
-              {/* 소프트케이 소식 */}
-              <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('news')} onMouseLeave={handleMouseLeave}>
-                <button type="button" className="header-menu-btn">소프트케이소식</button>
-
-                <div className={`header-dropdown ${activeMenu === 'news' ? 'is-open' : ''}`}>
-                  <ul className="header-dropdown-list">
                     <li className="header-dropdown-item">
                       <Link to="/order-status" className="header-dropdown-link">
                         수주현황
                       </Link>
                     </li>
+                  </ul>
+                </div>
+              </li>
+
+              {/* 소프트케이 소식
+              <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('news')} onMouseLeave={handleMouseLeave}>
+                <button type="button" className="header-menu-btn">소프트케이소식</button>
+
+                <div className={`header-dropdown ${activeMenu === 'news' ? 'is-open' : ''}`}>
+                  <ul className="header-dropdown-list">
+                    
                     <li className="header-dropdown-item">
                       <Link to="/softk-news" className="header-dropdown-link">
                         소프트케이뉴스
@@ -90,17 +91,22 @@ function Header() {
                     </li>
                   </ul>
                 </div>
-              </li>
+              </li> */}
 
               {/* 용역사업소개 */}
               <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('business')} onMouseLeave={handleMouseLeave}>
-                <button type="button" className="header-menu-btn">용역사업소개</button>
+                <button type="button" className="header-menu-btn">사업소개</button>
 
                 <div className={`header-dropdown ${activeMenu === 'business' ? 'is-open' : ''}`}>
                   <ul className="header-dropdown-list">
                     <li className="header-dropdown-item">
                       <Link to="/business/consulting" className="header-dropdown-link">
                         기록관리 컨설팅
+                      </Link>
+                    </li>
+                    <li className="header-dropdown-item">
+                      <Link to="/business/build" className="header-dropdown-link">
+                        기록관리시스템 구축
                       </Link>
                     </li>
                     <li className="header-dropdown-item">
