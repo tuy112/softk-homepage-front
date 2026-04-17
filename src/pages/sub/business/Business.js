@@ -8,6 +8,7 @@ import Footer from '../../../components/common/Footer';
 
 const businessMenu = [
     { key: 'consulting', label: '기록관리 컨설팅' },
+    { key: 'build', label: '기록관리시스템 구축' },
     { key: 'transfer', label: '기록물 이관 용역' },
     { key: 'disclosure', label: '공개재분류 용역' },
     { key: 'registration', label: '각종 기록물 등록 용역' },
