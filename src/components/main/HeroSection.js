@@ -16,9 +16,8 @@ function HeroSection() {
       <div className="section-shell hero-section__shell">
         <div className="container section-inner hero-section__inner">
           <div className="hero-section__content">
-            <span className="section-badge">Records Management Partner</span>
             <h1 className="section-title">
-              기록관리 시스템을
+              기록관리시스템을
               <br />
               더 안정적이고 더 유연하게
             </h1>
