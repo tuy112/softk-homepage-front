@@ -4,6 +4,8 @@ import './Clients.css';
 import Header from '../../../components/common/Header';
 import Footer from '../../../components/common/Footer';
 
+import clientsData from "../../../data/sub/clientsData";
+
 function Clients() {
   return (
     <div className="clients-page">
@@ -21,14 +23,13 @@ function Clients() {
           <div className="container">
             <h2 className="sub-section-title">Clients</h2>
 
-            <div className="clients-grid">
-              <div className="client-card">OO기관</div>
-              <div className="client-card">OO공사</div>
-              <div className="client-card">OO시청</div>
-              <div className="client-card">OO대학교</div>
-              <div className="client-card">OO기업</div>
-              <div className="client-card">OO연구소</div>
-            </div>
+            <ul className="clients-grid">
+              {clientsData.map((client, idx) => (
+                <li key={idx} className="client-card">
+                  {client}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
