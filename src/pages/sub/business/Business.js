@@ -54,7 +54,7 @@ function Business() {
                             {/* SIDEBAR */}
                             <aside className="business-detail-sidebar">
                                 <div className="business-detail-sidebar-box">
-                                    <h3>용역사업소개</h3>
+                                    <h3>사업소개</h3>
 
                                     <ul>
                                         {businessMenu.map((item) => (
