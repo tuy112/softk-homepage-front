@@ -93,11 +93,45 @@ function Header() {
                 </div>
               </li> */}
 
+
               {/* 사업소개 */}
-              <li className="header-menu-item">
-                <Link to="/business/consulting" className="header-menu-btn">
-                  사업소개
-                </Link>
+              <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('business')} onMouseLeave={handleMouseLeave}>
+                <button type="button" className="header-menu-btn">사업소개</button>
+
+                <div className={`header-dropdown ${activeMenu === 'business' ? 'is-open' : ''}`}>
+                  <ul className="header-dropdown-list">
+                    <li className="header-dropdown-item">
+                      <Link to="/business/consulting" className="header-dropdown-link">
+                        기록관리 컨설팅
+                      </Link>
+                    </li>
+                    <li className="header-dropdown-item">
+                      <Link to="/business/build" className="header-dropdown-link">
+                        기록관리시스템 구축
+                      </Link>
+                    </li>
+                    <li className="header-dropdown-item">
+                      <Link to="/business/transfer" className="header-dropdown-link">
+                        기록물 이관 용역
+                      </Link>
+                    </li>
+                    <li className="header-dropdown-item">
+                      <Link to="/business/disclosure" className="header-dropdown-link">
+                        공개재분류 용역
+                      </Link>
+                    </li>
+                    <li className="header-dropdown-item">
+                      <Link to="/business/registration" className="header-dropdown-link">
+                        각종 기록물 등록 용역
+                      </Link>
+                    </li>
+                    <li className="header-dropdown-item">
+                      <Link to="/business/conversion" className="header-dropdown-link">
+                        구전자문서 변환 용역
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
 
               {/* 고객사 */}
@@ -115,7 +149,7 @@ function Header() {
 
               {/* 오시는길 */}
               <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('directions')} onMouseLeave={handleMouseLeave}>
-                <Link to="/directions" className="header-menu-btn">오시는길</Link>
+              <Link to="/directions" className="header-menu-btn">오시는길</Link>
 
                 <div className={`header-dropdown ${activeMenu === 'directions' ? 'is-open' : ''}`}>
                   <ul className="header-dropdown-list">
