@@ -8,7 +8,7 @@ function AboutSection() {
         <div className="container section-inner about-section__inner">
           <div className="about-section__content">
             <div className="section-heading-dark about-section__heading">
-              <span className="section-heading-dark__eyebrow">ABOUT SOFT.K</span>
+              <span className="section-heading-dark__eyebrow">ABOUT SOFTK</span>
               <h2 className="section-heading-dark__title">
                 기록관리 업무를 이해하는
                 <br />
