@@ -1,3 +1,4 @@
+/* 기본 */
 body {
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -10,29 +11,34 @@ body {
   min-height: 100vh;
 }
 
+/* 컨테이너 */
 .container {
   width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 0 32px;
 }
 
 .section-shell {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  padding-top: var(--header-height);
-  overflow: visible;
+  padding: 120px 0;
 }
 
 .section-inner {
   width: 100%;
-  min-height: calc(100vh - var(--header-height));
   display: flex;
   align-items: center;
 }
 
+/* 첫 화면만 꽉 차게 */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* 텍스트 */
 .section-badge {
   display: inline-flex;
   align-items: center;
@@ -46,7 +52,7 @@ body {
 }
 
 .section-title {
-  font-size: 56px;
+  font-size: 47px;
   line-height: 1.15;
   font-weight: 800;
   color: var(--color-white);
@@ -59,13 +65,13 @@ body {
   color: rgba(255, 255, 255, 0.82);
 }
 
+/* 다크 섹션 */
 .section-heading-dark {
   text-align: center;
   margin-bottom: 56px;
 }
 
 .section-heading-dark__eyebrow {
-  display: inline-block;
   font-size: 16px;
   font-weight: 700;
   color: var(--color-primary);
@@ -85,6 +91,7 @@ body {
   color: var(--color-gray-700);
 }
 
+/* 버튼 */
 .btn-group {
   display: flex;
   gap: 16px;
@@ -119,6 +126,7 @@ body {
   background-color: rgba(255, 255, 255, 0.06);
 }
 
+/* 카드 */
 .card {
   background-color: #ffffff;
   border-radius: var(--radius-lg);
@@ -132,51 +140,31 @@ body {
   border-radius: var(--radius-xl);
 }
 
-.text-white-80 {
-  color: rgba(255, 255, 255, 0.8);
-}
+/* 텍스트 색 */
+.text-white-80 { color: rgba(255,255,255,0.8); }
+.text-white-60 { color: rgba(255,255,255,0.6); }
 
-.text-white-60 {
-  color: rgba(255, 255, 255, 0.6);
-}
-
+/* 반응형 */
 @media (max-width: 1024px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .section-title {
-    font-size: 42px;
-  }
-
-  .section-heading-dark__title {
-    font-size: 40px;
-  }
-
+  .container { padding: 0 20px; }
+  .section-title { font-size: 42px; }
+  .section-heading-dark__title { font-size: 40px; }
   .section-desc,
-  .section-heading-dark__desc {
-    font-size: 16px;
-  }
+  .section-heading-dark__desc { font-size: 16px; }
 }
 
 @media (max-width: 768px) {
   .section-shell {
-    padding-top: 72px;
-    min-height: auto;
+    padding: 80px 0;
   }
 
   .section-inner {
-    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .section-title {
-    font-size: 34px;
-  }
-
-  .section-heading-dark__title {
-    font-size: 32px;
-  }
+  .section-title { font-size: 34px; }
+  .section-heading-dark__title { font-size: 32px; }
 
   .btn-group {
     flex-direction: column;
