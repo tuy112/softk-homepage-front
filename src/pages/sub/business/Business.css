@@ -157,6 +157,60 @@
     background: #2563eb;
 }
 
+
+/* 이미지 섹션 */
+.business-image-section {
+    padding: 100px 0;
+    background: #f1f5f9;
+}
+
+.business-image-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.business-image-text {
+    flex: 1;
+}
+
+.business-image-text span {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.business-image-text h2 {
+    font-size: 32px;
+    margin: 16px 0 24px;
+    line-height: 1.4;
+}
+
+.business-image-text ul {
+    padding: 0;
+    list-style: none;
+}
+
+.business-image-text li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #334155;
+}
+
+.business-image-box {
+    flex: 1;
+}
+
+.business-image-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .business-detail-layout {
@@ -227,5 +281,10 @@
     .business-detail-content-box p,
     .business-detail-content-box li {
         font-size: 16px;
+    }
+
+    /* 이미지 섹션 */
+    .business-image-container {
+        flex-direction: column;
     }
 }
