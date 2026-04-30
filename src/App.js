@@ -14,6 +14,9 @@ import Business from './pages/sub/business/Business';
 import Clients from './pages/sub/clients/Clients';
 import Dirctions from './pages/sub/directions/Directions';
 
+// components
+import TopButton from './components/common/top/TopButton';
+
 function App() {
   return (
     <HashRouter>
@@ -37,6 +40,9 @@ function App() {
         {/* 오시는길 */}
         <Route path="/directions" element={<Dirctions />} />
       </Routes>
+
+      <TopButton />
+
     </HashRouter>
   );
 }

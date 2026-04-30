@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.top-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #111;
+    font-size: 15px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-button:hover {
+    background-color: #555;
+    color: #fff;
+}
