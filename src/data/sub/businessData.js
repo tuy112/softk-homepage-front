@@ -1,4 +1,4 @@
-// 용역사업소개 data
+// 사업소개 data
 
 const businessData = {
   consulting: {
