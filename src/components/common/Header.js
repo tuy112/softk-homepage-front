@@ -96,7 +96,7 @@ function Header() {
 
               {/* 사업소개 */}
               <li className="header-menu-item" onMouseEnter={() => handleMouseEnter('business')} onMouseLeave={handleMouseLeave}>
-                <button type="button" className="header-menu-btn">사업소개</button>
+                <Link to="/business/consulting" className="header-menu-btn">사업소개</Link>
 
                 <div className={`header-dropdown ${activeMenu === 'business' ? 'is-open' : ''}`}>
                   <ul className="header-dropdown-list">
